@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oppwa-guard"
+version = "0.1.0"
+description = "Server-side payment verification for merchants integrating OPPWA (Open Payment Platform) checkouts"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Andile Mbele", email = "andilembele020@gmail.com" }]
+keywords = ["oppwa", "payments", "webhook", "idempotency", "security"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: Office/Business :: Financial",
+    "Typing :: Typed",
+]
+dependencies = ["cryptography>=42"]
+
+[project.urls]
+Homepage = "https://github.com/xeroxzen/oppwa-guard"
+Documentation = "https://github.com/xeroxzen/oppwa-guard/tree/main/docs"
+Issues = "https://github.com/xeroxzen/oppwa-guard/issues"
+Changelog = "https://github.com/xeroxzen/oppwa-guard/blob/main/CHANGELOG.md"
+
+[dependency-groups]
+dev = ["pytest>=8", "mypy>=1.10", "ruff>=0.5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oppwa_guard"]
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
