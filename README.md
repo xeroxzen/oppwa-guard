@@ -20,10 +20,10 @@ if verdict.accepted:
 
 | Mistake | What it costs | Check |
 |---|---|---|
-| Fulfilling on a success code without checking currency and amount | An order invoiced at USD 1,000 is "paid" with ZWG 1,000 (about USD 35) | [`verify_payment`](docs/reference/api.md#verify_payment) |
-| Building the status request from the browser's `resourcePath` | The shopper points your check at a payment that isn't theirs | [`status_path`](docs/reference/api.md#status_path) |
-| Treating `000.100.110` as success in production | A test-mode entity accepts payments that never settle | [`classify`](docs/reference/api.md#classify) |
-| Crediting on every notification delivery | Retries or replays credit one payment several times | [`claim_payment`](docs/reference/api.md#claim_payment) |
+| Fulfilling on a success code without checking currency and amount | An order invoiced at USD 1,000 is "paid" with ZWG 1,000 (about USD 35) | [`verify_payment`](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/api.md#verify_payment) |
+| Building the status request from the browser's `resourcePath` | The shopper points your check at a payment that isn't theirs | [`status_path`](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/api.md#status_path) |
+| Treating `000.100.110` as success in production | A test-mode entity accepts payments that never settle | [`classify`](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/api.md#classify) |
+| Crediting on every notification delivery | Retries or replays credit one payment several times | [`claim_payment`](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/api.md#claim_payment) |
 
 ## Install
 
@@ -37,19 +37,19 @@ Requires Python 3.10 or later. The only runtime dependency is [`cryptography`](h
 
 ## Documentation
 
-- [Get started](docs/get-started.md): verify your first payment in five minutes.
+- [Get started](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/get-started.md): verify your first payment in five minutes.
 - Concepts
-  - [Threat model](docs/concepts/threat-model.md): the four failures and why each one happens.
+  - [Threat model](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/concepts/threat-model.md): the four failures and why each one happens.
 - How-to guides
-  - [Verify a shopper return](docs/how-to/verify-shopper-return.md)
-  - [Handle webhook notifications](docs/how-to/handle-webhooks.md)
-  - [Credit each payment exactly once](docs/how-to/credit-exactly-once.md)
-  - [Test your integration](docs/how-to/test-your-integration.md)
+  - [Verify a shopper return](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/how-to/verify-shopper-return.md)
+  - [Handle webhook notifications](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/how-to/handle-webhooks.md)
+  - [Credit each payment exactly once](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/how-to/credit-exactly-once.md)
+  - [Test your integration](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/how-to/test-your-integration.md)
 - Reference
-  - [Python API](docs/reference/api.md)
-  - [Result codes](docs/reference/result-codes.md)
-- [Troubleshooting](docs/troubleshooting.md)
-- [Changelog](CHANGELOG.md)
+  - [Python API](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/api.md)
+  - [Result codes](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/reference/result-codes.md)
+- [Troubleshooting](https://github.com/xeroxzen/oppwa-guard/blob/main/docs/troubleshooting.md)
+- [Changelog](https://github.com/xeroxzen/oppwa-guard/blob/main/CHANGELOG.md)
 
 ## Scope
 
@@ -59,8 +59,8 @@ Requires Python 3.10 or later. The only runtime dependency is [`cryptography`](h
 
 ## Contributing and security
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). To report a vulnerability, follow [SECURITY.md](SECURITY.md) instead of opening a public issue.
+See [CONTRIBUTING.md](https://github.com/xeroxzen/oppwa-guard/blob/main/CONTRIBUTING.md). To report a vulnerability, follow [SECURITY.md](https://github.com/xeroxzen/oppwa-guard/blob/main/SECURITY.md) instead of opening a public issue.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/xeroxzen/oppwa-guard/tree/main/LICENSE)
