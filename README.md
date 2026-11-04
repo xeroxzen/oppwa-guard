@@ -63,4 +63,4 @@ See [CONTRIBUTING.md](https://github.com/xeroxzen/oppwa-guard/blob/main/CONTRIBU
 
 ## License
 
-[MIT](https://github.com/xeroxzen/oppwa-guard/tree/main/LICENSE)
+[MIT](https://github.com/xeroxzen/oppwa-guard/blob/main/LICENSE)
