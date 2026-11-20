@@ -31,8 +31,6 @@ if verdict.accepted:
 uv add oppwa-guard
 ```
 
-Until the first PyPI release, install from GitHub instead: `uv add git+https://github.com/xeroxzen/oppwa-guard`.
-
 Requires Python 3.10 or later. The only runtime dependency is [`cryptography`](https://cryptography.io).
 
 ## Documentation
